@@ -1,0 +1,236 @@
+.fl{float: left;}
+.fr{float: right;}
+.clear:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.wrap{
+	max-width: 960px;
+	/*width: 100%;*/
+	margin: auto;
+	min-width: 320px;
+}
+
+.header img{
+	width: 100%;
+	display: none;
+}
+.header img:nth-child(1){
+	display: block;
+}
+.content{
+	/*text-align: center;*/
+}
+.content h2{
+	width: 79%;
+	font-size: 25px;
+	text-indent: 2em;
+	line-height: 48px;
+	margin: auto;
+	padding-top: 55px;
+}
+.content h2 span{
+	color: #ea5417;
+}
+.content h2 img{
+	vertical-align: middle;
+}
+.content .download{
+	/*text-align: center;*/
+	padding-top: 100px;
+	width: 79%;
+	margin: auto;
+	max-width: 569px;
+}
+.content .download img{
+	width: 49%;
+}
+.content .download a:nth-child(1){
+	margin-right: 2%;
+}
+.content .line{
+	text-align: center;
+	font-size: 20px;
+	padding-top: 90px;
+	width: 79%;
+	margin: auto;
+}
+.content .line img{
+	width: 100%;
+}
+.content .line span{
+	color: #eb9116;
+	font-size: 30px;
+	font-style: italic;
+}
+.content .line h3{
+	padding-bottom: 20px;
+}
+
+form{
+	width: 360px;
+	margin: auto;
+}
+form input{
+	width: 100%;
+	height: 45px;
+	font-size: 20px;
+	border: none;	
+}
+.user{
+	width: 357px;
+	background: url(../img/user.jpg);
+	text-indent: 10px;
+	margin-bottom: 16px;
+}
+.phone{
+	width: 357px;
+	background: url(../img/mobile.jpg);
+	text-indent: 10px;
+	margin-bottom: 20px;
+}
+.check{
+	width: 242px;
+	height: 42px;
+	background: url(../img/security_code.jpg);
+	text-indent: 10px;
+	margin-right: 2px;
+}
+.btn{
+	height: 42px;
+	width: 113px;
+	border: 2px solid #e6e9f2;
+	background-color:#fdfdff;
+	color: #ffb12a;
+	font-size: 18px;
+	vertical-align: bottom;
+}
+.login{
+	padding-top: 20px;
+	color: #616161;
+	padding-bottom: 22px;
+}
+.login span{
+	color: #fb0a03;
+}
+.content .left{
+	font-size: 18px;
+	width: 145px;
+	line-height: 22px;
+}
+.content .right{
+	width: 128px;
+	margin-left: 8px;
+}
+.content .right img{width: 100%;}
+.footer{
+	height: 80px;
+	background: #e89316;
+	margin-top: 29px;
+	font-size: 25px;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+}
+.footer p{
+	padding-bottom: 10px;
+}
+
+
+@media screen and (max-width: 640px){
+	.header img:nth-child(1){
+		display: none;
+	}
+	.header img:nth-child(2){
+		display: block;
+	}
+
+	.content .download{
+		padding-top: 50px;
+	}
+	.content .line{
+		font-size: 12px;
+		padding-top: 45px;
+	}
+	.content .line span{
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.content h2{
+		font-size: 15px;
+		line-height: 25px;
+		padding-top: 25px;
+	}
+	.content h2 img{
+		width: 56px;
+	}
+	form{
+		width: 180px;
+	}
+	.user{
+		width: 180px;
+		height: 22px;
+		background-size: 100% 100%;
+		margin-bottom: 8px;
+	}
+	.phone{
+		width: 180px;
+		height: 22px;
+		background-size: 100% 100%;
+		margin-bottom: 10px;
+	}
+	.check{
+		width: 121px;
+		height: 22px;
+		background: url(../img/security_code.jpg);
+		text-indent: 10px;
+		margin-right: 2px;
+		background-size: 100% 100%;
+	}
+	.btn{
+		height: 22px;
+		width: 56px;
+		border: 2px solid #e6e9f2;
+		background-color:#fdfdff;
+		color: #ffb12a;
+		font-size: 18px;
+		vertical-align: bottom;
+	}
+	.content .login{
+		padding-top: 10px;
+		
+	}
+	.content .left{
+		    font-size: 12px;
+	    width: 96px;
+	    line-height: 12px;
+	}
+	.content .right{
+		width: 70px;
+
+	}
+	.content .line h3 {
+		font-size: 12px;
+	}
+	.content .login img{
+		width: 100%;
+	}
+	.content img{
+		width: 100%;
+	}
+	.footer{
+		height: 40px;
+		background: #e89316;
+		margin-top: 15px;
+		font-size: 12px;
+		color: white;
+		text-align: center;
+		padding-top: 10px;
+	}
+	.footer p{
+		padding-bottom: 5px;
+	}
+}
